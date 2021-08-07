@@ -99,7 +99,7 @@ Route::post('/store/about', [AboutController::class, 'StoreAbout'])->name('store
 
 Route::get('/about/edit/{id}', [AboutController::class, 'EditAbout']);
 
-Route::post('/update/homeabout{id}', [AboutController::class, 'UpdateAbout']);
+Route::post('/update/homeabout/{id}', [AboutController::class, 'UpdateAbout']);
 
 Route::get('/about/delete/{id}', [AboutController::class, 'DeleteAbout']); 
 
@@ -117,6 +117,12 @@ Route::get('/admin/add/contact', [ContactController::class, 'AdminAddContact'])-
 
 
 Route::post('/admin/store/contact', [ContactController::class, 'AdminStoreContact'])->name('store.contact');
+
+Route::get('/contact/edit/{id}', [ContactController::class, 'EditAdminContact']);
+
+Route::get('/contact/delete/{id}', [ContactController::class, 'DeleteAdminContact']);
+
+Route::post('/admin/update/contact/{id}', [ContactController::class, 'AdminContactUpdate'])->name('contact.update');
 
 
 

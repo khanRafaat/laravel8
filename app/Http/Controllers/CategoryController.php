@@ -101,7 +101,7 @@ return view('admin.category.index',compact('categories','trachCat'));
 
    public function Update(Request $request, $id){
 
-      $update = Category::find($id)->update([
+   $update = Category::find($id)->update([
 
 
   'category_name' => $request->category_name,
