@@ -6,13 +6,14 @@
    <div class="container">
     <div class="row">
 
-<h4>Home Contatact </h4>
-    <a href="{{ route('add.contact') }}"> <button class="btn btn-info">Add Contact</button>  </a>
-<br><br>
+
+  
+
 
 
     <div class="col-md-12">
      <div class="card">
+     <a class="text-right" href="{{ route('add.contact') }}"> <button class="btn btn-info">Add Contact</button>  </a>
   <div class="card-header"> All Contact Data </div>
     
 
